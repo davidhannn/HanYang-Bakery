@@ -1,11 +1,16 @@
+$mainBrown: #2d1ef1;
+$mainYellow: #ff9e09;
+$mainGrey: #ece8dc;
+$mainWhite: #fff;
+$mainDark: #222;
+
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background: #fff;
-  color: #222;
+  background: $mainWhite;
+  color: $mainDark;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -20,12 +25,11 @@ h6 {
 }
 
 .text-yellow {
-  color: #ff9e09;
+  color: $mainYellow;
 }
 
 .cart-icon {
   cursor: pointer;
-  color: #ff9e09;
+  color: $mainYellow;
   font-size: 2rem;
 }
-/*# sourceMappingURL=layout.css.map */
