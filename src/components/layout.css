@@ -28,4 +28,40 @@ h6 {
   color: #ff9e09;
   font-size: 2rem;
 }
+
+.default-background,
+about-background {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 158, 9, 0.5)), to(rgba(255, 158, 9, 0.5)));
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
+}
+
+.about-background {
+  min-height: 60vh;
+}
+
+.btn-yellow {
+  color: #ff9e09;
+  border-color: #ff9e09;
+}
+
+.btn-yellow:hover {
+  background: #ff9e09;
+  color: #2d1e1f !important;
+}
+
+.footer {
+  background: #2d1e1f;
+}
 /*# sourceMappingURL=layout.css.map */

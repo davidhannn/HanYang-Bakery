@@ -1,4 +1,4 @@
-$mainBrown: #2d1ef1;
+$mainBrown: #2d1e1f;
 $mainYellow: #ff9e09;
 $mainGrey: #ece8dc;
 $mainWhite: #fff;
@@ -32,4 +32,33 @@ h6 {
   cursor: pointer;
   color: $mainYellow;
   font-size: 2rem;
+}
+
+.default-background,
+about-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
+}
+
+.about-background {
+  min-height: 60vh;
+}
+
+.btn-yellow {
+  color: $mainYellow;
+  border-color: $mainYellow;
+}
+
+.btn-yellow:hover {
+  background: $mainYellow;
+  color: $mainBrown !important;
+}
+
+.footer {
+  background: $mainBrown;
 }
