@@ -45,8 +45,8 @@ export default class Menu extends Component {
     if (this.state.items.length > 0) {
       return (
         <section className="menu py-5">
-          <div className="container">
-            <Title title="best of our menu" />
+          <div className="container" id="menu">
+            <Title title="Menu" />
             {/* categories */}
             <div className="row mb-5">
               <div className="col-10 mx-auto text-center">

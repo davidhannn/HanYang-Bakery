@@ -2,14 +2,18 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer className="footer py-3">
-      <div className="container">
-        <div className="row">
-          <div className="col-10 mx-auto col-md-6 text-yellow text-center text-capitalize">
-            <h3>
-              All Rights Reserved &copy;{new Date().getFullYear().toString}
-            </h3>
-          </div>
+    <footer className="footer">
+      <div className="footer-content-wrap">
+        <div className="footer-info-item">
+          <span class="footer-info-text">HanYang Bakery</span>
+        </div>
+        <div className="footer-info-item">
+          <span class="footer-info-text">
+            9732 Garden Grove Blvd. #7 Garden Grove, CA 92844
+          </span>
+        </div>
+        <div className="footer-info-item">
+          <span class="footer-info-text">(714)-537-5150</span>
         </div>
       </div>
     </footer>

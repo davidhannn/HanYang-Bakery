@@ -1,8 +1,13 @@
-$mainBrown: #2d1e1f;
+$mainBrown: #745e4d;
 $mainYellow: #ff9e09;
 $mainGrey: #ece8dc;
 $mainWhite: #fff;
 $mainDark: #222;
+$navbarColor: #f8f7f4;
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,7 +16,8 @@ $mainDark: #222;
 body {
   background: $mainWhite;
   color: $mainDark;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  // font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Courier Prime", monospace;
 }
 
 h1,
@@ -21,7 +27,7 @@ h4,
 h5,
 h6 {
   font-family: "Courier New", Courier, monospace !important;
-  letter-spacing: 0.25rem !important;
+  letter-spacing: 0.05rem !important;
 }
 
 .text-yellow {
@@ -34,15 +40,56 @@ h6 {
   font-size: 2rem;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: $navbarColor;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: right;
+}
+
+.nav-link {
+  color: $mainBrown !important;
+}
+
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 .default-background,
 about-background {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background: linear-gradient(rgba(126, 123, 121, 0.8), rgba(116, 94, 77, 0.6));
   background-position: center;
   background-size: cover;
+  opacity: 1 !important;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  color: white;
+  h1 {
+    font-family: "Dancing Script", cursive !important;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif !important;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
 }
 
 .about-background {
@@ -67,3 +114,46 @@ about-background {
 .contact {
   background: $mainGrey;
 }
+
+.about-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 6rem 2rem;
+}
+
+.left-column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.info-item {
+  margin-bottom: 3rem;
+}
+.item-title {
+  margin-bottom: -2px;
+}
+
+.footer {
+  min-height: 10vh;
+  font-size: 1.25rem;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: bold;
+  background-color: $mainGrey;
+}
+.footer-content-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.footer-info-text::after {
+  content: "  |";
+}
+
+// .footer-info-text::before {
+//   content: "            |";
+// }

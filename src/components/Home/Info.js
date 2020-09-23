@@ -1,29 +1,52 @@
 import React from "react"
 import { Link } from "gatsby"
 import Title from "../Globals/Title"
+import { ImPhone } from "react-icons/fa"
 
 const Info = () => {
   return (
-    <section className="py-5">
-      <div className="container">
-        <Title title="Our Story"></Title>
-        <div className="row">
-          <div className="col-10 col-sm-8 mx-auto text-center">
-            <p className="lead text-muted mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <section>
+      <div className="about-info">
+        <div className="left-column">
+          <h2 className="section-title">Welcome to HanYang Bakery</h2>
+          <div className="paragraph-wrap">
+            <p>
+              HanYang Bakery is one of the best and only Korean bakeries in
+              Orange County. All ingredients are freshly created in-house every
+              morning to create the healthiest and delicious Korean snacks
+              around.
             </p>
-            <Link to="/about/">
+          </div>
+        </div>
+        <div className="right-column">
+          <div className="contact-info">
+            <div className="info-item">
+              <h4 className="item-title">Contact Us</h4>
+              <div className="info-data">Phone: (714)-537-5150 </div>
+            </div>
+            <div className="info-item">
+              <h4 className="item-title">Location</h4>
+              <div className="info-data">
+                <p>
+                  9732 Garden Grove Blvd. #7 <br /> Garden Grove, CA 92844
+                </p>
+              </div>
+            </div>
+            <div className="info-item">
+              <h4 className="item-title">Hours</h4>
+              <div className="info-data">
+                <p>
+                  Monday: Closed <br />
+                  Tuesday - Sunday: 7:00 AM - 5:00PM
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* <Link to="/about/">
               <button className="btn text-uppercase btn-yellow">
                 About Page
               </button>
-            </Link>
-          </div>
+            </Link> */}
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import { FaCartArrowDown } from "react-icons/fa"
-import logo from "../../images/logo.png"
+import logo from "../../images/logo.jpg"
 
 export default class Navbar extends Component {
   state = {
@@ -18,6 +18,21 @@ export default class Navbar extends Component {
         path: "/about",
         text: "about",
       },
+      {
+        id: 3,
+        path: "#menu",
+        text: "menu",
+      },
+      {
+        id: 4,
+        path: "/store",
+        text: "store",
+      },
+      {
+        id: 5,
+        path: "/contact",
+        text: "contact",
+      },
     ],
   }
 
@@ -32,9 +47,9 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-sm bg-light navbar-light">
+      <nav className="navbar navbar-expand-sm">
         <Link to="/" className="navbar-brand">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="logo" />
         </Link>
         <button
           className="navbar-toggler"
