@@ -27,7 +27,7 @@ h4,
 h5,
 h6 {
   font-family: "Courier New", Courier, monospace !important;
-  letter-spacing: 0.05rem !important;
+  letter-spacing: 0.04rem !important;
 }
 
 .text-yellow {
@@ -60,17 +60,7 @@ h6 {
   max-height: 100px;
 }
 
-.default-background,
-about-background {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(rgba(126, 123, 121, 0.8), rgba(116, 94, 77, 0.6));
-  background-position: center;
-  background-size: cover;
-  opacity: 1 !important;
-}
+
 
 .hero-section {
   display: flex;
@@ -115,18 +105,6 @@ about-background {
   background: $mainGrey;
 }
 
-.about-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 6rem 2rem;
-}
-
-.left-column {
-  display: flex;
-  flex-wrap: wrap;
-  width: 40%;
-}
 
 .info-item {
   margin-bottom: 3rem;

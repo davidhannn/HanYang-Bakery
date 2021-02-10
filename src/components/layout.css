@@ -1,6 +1,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+          margin: 0;
+          padding: 0;
 }
 
 body {
@@ -16,7 +18,7 @@ h4,
 h5,
 h6 {
   font-family: "Courier New", Courier, monospace !important;
-  letter-spacing: 0.25rem !important;
+  letter-spacing: 0.2rem !important;
 }
 
 .text-yellow {
@@ -47,9 +49,6 @@ about-background {
   background-size: cover;
 }
 
-.about-background {
-  min-height: 60vh;
-}
 
 .btn-yellow {
   color: #ff9e09;

@@ -1,8 +1,8 @@
 import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Navbar from "./Globals/Navbar"
-import Footer from "./Globals/Footer"
+import Navbar from "./navbar/navbar.component"
+import Footer from "../footer/footer.component"
 
 import "./bootstrap.min.css"
 import "./layout.scss"

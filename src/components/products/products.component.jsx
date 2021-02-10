@@ -1,5 +1,5 @@
 import React from "react"
-import Product from "./Product"
+import Product from "../product/product.component"
 import Title from "../Globals/Title"
 import { StaticQuery, graphql } from "gatsby"
 

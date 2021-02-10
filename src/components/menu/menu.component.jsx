@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import Title from "../Globals/Title"
 import Img from "gatsby-image"
 
+import './menu.styles.scss';
+
 const getCategories = items => {
   let tempItems = items.map(items => {
     return items.node.category
@@ -74,7 +76,7 @@ export default class Menu extends Component {
                     key={node.id}
                     className="col-11 col-md-6 my-3 d-flex mx-auto"
                   >
-                    <div>
+                    <div className="menu-img">
                       <Img fixed={node.image} />
                     </div>
                     {/* item text */}

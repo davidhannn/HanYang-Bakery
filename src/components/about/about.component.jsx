@@ -3,17 +3,19 @@ import { Link } from "gatsby"
 import Title from "../Globals/Title"
 import { ImPhone } from "react-icons/fa"
 
-const Info = () => {
+import './about.styles.scss';
+
+const About = () => {
   return (
-    <section>
+    <section id="about">
       <div className="about-info">
         <div className="left-column">
-          <h2 className="section-title">Welcome to HanYang Bakery</h2>
+          <h2 className="section-title">HanYang Bakery</h2>
           <div className="paragraph-wrap">
             <p>
-              HanYang Bakery is one of the best and only Korean bakeries in
-              Orange County. All ingredients are freshly created in-house every
-              morning to create the healthiest and delicious Korean snacks
+              HanYang Bakery is one of the best and longest running Korean bakeries in
+              Orange County. All snacks are created every
+              morning with the freshest ingredients to create the healthiest and delicious Korean snacks
               around.
             </p>
           </div>
@@ -42,15 +44,17 @@ const Info = () => {
               </div>
             </div>
           </div>
-          {/* <Link to="/about/">
-              <button className="btn text-uppercase btn-yellow">
-                About Page
-              </button>
-            </Link> */}
         </div>
       </div>
     </section>
+    // <section id="about">
+    //     <div className="section-container">
+    //         <h2>HanYang</h2>
+    //         <h3>한양</h3>
+    //         <p>HanYang Bakery is one of the longest running bakeries in Orange County. All snacks are created using the freshest ingredients each morning to make the healthiest and delicious Korean snacks around</p>
+    //     </div>
+    // </section>
   )
 }
 
-export default Info
+export default About

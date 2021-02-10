@@ -3,21 +3,21 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BackgroundSection from "../components/Globals/BackgroundSection"
-import Info from "../components/Home/Info"
-import Menu from "../components/Home/Menu"
-import Products from "../components/Home/Products"
-import Contact from "../components/Home/Contact"
+import Hero from "../components/hero/hero.component"
+import About from "../components/about/about.component"
+import Menu from "../components/menu/menu.component"
+import Products from "../components/products/products.component"
+import Contact from "../components/contact/contact.component"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <BackgroundSection
+    <Hero
       img={data.img.childImageSharp.fluid}
       title="HanYang Bakery"
       styleClass="default-background"
     />
-    <Info />
+    <About />
     <Menu items={data.menu} />
     <Products />
     <Contact />
