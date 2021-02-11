@@ -4,36 +4,57 @@ import Img from 'gatsby-image'
 
 import logo from "../../images/logo2.png"
 
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import './hero.styles.scss';
 
-// export const query = graphql`
 
-// `
+const Hero = () => {
+  const data = useStaticQuery(graphql`
+ query {
+    allContentfulHeroSection {
+      edges {
+        node {
+          heroImage {
+            resize (width: 1000, height: 500) {
+              src
+            }
+          }
+        }
+      }
+    }
+  }
+  `)
 
-const Hero = ({ img, styleClass, title, children }) => {
   return (
       <section id="hero">
           <div className="hero-main-container">
-          <div className="hero-left-container"> 
-                <img src={logo} />
-                <h4>Authentic Korean Snacks</h4>
-                <button className="hero-container-button">Explore Menu</button>
-          </div>
-          <div className="hero-right-container">
-              <div className="img-container">
-                <Img fluid={img} imgStyle={{ objectFit: "contain" }}/>
-              </div>
-                {/* <div className="hero-section">
-                    <h1 className="hero-title">{title}</h1>
-                    <h3>Authentic Korean Dessert</h3>
-                </div> */}
-          </div>
+            {console.log(data.allContentfulHeroSection.edges)}
+            {data.allContentfulHeroSection.edges.map((edge) => (
+    
+              <img className="hero-image" src={edge.node.heroImage[0].resize.src} />
+            ))}
           </div>
     </section>
   )
 }
+
+
+// export const query = graphql`
+// {
+//   allContentfulHeroSection {
+//     edges {
+//       node {
+//         heroImage {
+//           resize {
+//             src
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// `
 
 
 

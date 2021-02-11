@@ -12,11 +12,7 @@ import Contact from "../components/contact/contact.component"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Hero
-      img={data.img.childImageSharp.fluid}
-      title="HanYang Bakery"
-      styleClass="default-background"
-    />
+    <Hero/>
     <About />
     <Menu items={data.menu} />
     <Products />

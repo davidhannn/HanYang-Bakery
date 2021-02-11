@@ -11,6 +11,8 @@ $navbarColor: #f8f7f4;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -18,6 +20,10 @@ body {
   color: $mainDark;
   // font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-family: "Courier Prime", monospace;
+}
+
+.main {
+  margin-left: 300px;
 }
 
 h1,
@@ -40,51 +46,6 @@ h6 {
   font-size: 2rem;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  background-color: $navbarColor;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: right;
-}
-
-.nav-link {
-  color: $mainBrown !important;
-}
-
-.logo {
-  max-width: 100px;
-  max-height: 100px;
-}
-
-
-
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  color: white;
-  h1 {
-    font-family: "Dancing Script", cursive !important;
-    font-size: 5rem;
-    font-weight: bold;
-  }
-
-  h3 {
-    font-family: "Roboto", sans-serif !important;
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-  }
-}
-
-.about-background {
-  min-height: 60vh;
-}
 
 .btn-yellow {
   color: $mainYellow;

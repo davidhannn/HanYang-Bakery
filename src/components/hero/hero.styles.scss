@@ -1,7 +1,7 @@
 .hero-main-container {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 90vh;
 }
 
 .hero-left-container {
@@ -21,6 +21,11 @@
 }
 
 .img-container {
-    max-width: 100%;
-    max-height: 80%;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.hero-image {
+    width: 50%;
+    height: 50%;
 }
